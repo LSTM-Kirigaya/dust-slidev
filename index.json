@@ -1,0 +1,115 @@
+{
+    "content": [
+        {
+            "name": "毕设中期答辩——基于扩散模型的图像去噪",
+            "path": "graduation-middle-report",
+            "password": "",
+            "cover": "https://picx.zhimg.com/80/v2-cfeadbc6f33fde845b3da518af1db8a7_1440w.png",
+            "tags": [
+                "扩散模型",
+                "计算机视觉"
+            ]
+        },
+        {
+            "name": "优秀毕业生答辩",
+            "path": "excellent-gradution-2023",
+            "password": "",
+            "cover": "https://picx.zhimg.com/80/v2-1e01f2b341b4a3ad89f28bdedbe2aa43_1440w.png",
+            "tags": [
+                "答辩"
+            ]
+        },
+        {
+            "name": "Colossalai 流水线并行框架开发",
+            "path": "internship-report",
+            "password": "",
+            "cover": "https://picx.zhimg.com/80/v2-05232725cb49e5f3b52dd12b0edd28a2_1440w.png",
+            "tags": [
+                "实习"
+            ]
+        },
+        {
+            "name": "毕设开题答辩——基于扩散模型的图像去噪",
+            "path": "graduation-opening-report",
+            "password": "",
+            "cover": "https://picx.zhimg.com/80/v2-8337b26e28e592375782939f97467cfd_1440w.png",
+            "tags": [
+                "扩散模型",
+                "计算机视觉"
+            ]
+        },
+        {
+            "name": "我的保研路",
+            "path": "2023-baoyan-share-yxh",
+            "password": "nuaa",
+            "cover": "https://picx.zhimg.com/80/v2-fa3feea564a1a3bee4791427e83b01bf_1440w.jpeg",
+            "tags": [
+                "nuaa",
+                "保研"
+            ]
+        },
+        {
+            "name": "保研分享",
+            "path": "2023-baoyan-share-xyx",
+            "password": "nuaa",
+            "cover": "https://pica.zhimg.com/80/v2-1f6aab14659e2c54c2b668c62d10f2c0_1440w.jpeg",
+            "tags": [
+                "nuaa",
+                "保研"
+            ]
+        },
+        {
+            "name": "一场经验的分享，更是信念的传递",
+            "path": "2023-baoyan-share-jsc",
+            "password": "nuaa",
+            "cover": "https://picx.zhimg.com/80/v2-d297591c5f9e3b1141d1069b29b1dee6_1440w.png",
+            "tags": [
+                "nuaa",
+                "保研"
+            ]
+        },
+        {
+            "name": "记得少年峥嵘夜",
+            "path": "2023-baoyan-share-cjc",
+            "password": "nuaa",
+            "cover": "https://pic1.zhimg.com/80/v2-d841b29c5655659226ce3e48300156f2_1440w.jpeg?source=d16d100b",
+            "tags": [
+                "nuaa",
+                "保研"
+            ]
+        },
+        {
+            "name": "一切都是最好的安排",
+            "path": "2023-baoyan-share-hzl",
+            "password": "nuaa",
+            "cover": "https://picx.zhimg.com/80/v2-0d5b9c6408e778e4d4225d69f48806eb_1440w.jpeg?source=d16d100b",
+            "tags": [
+                "nuaa",
+                "保研",
+                "分享会"
+            ]
+        },
+        {
+            "name": "2023 nuaa 保研分享会 cover",
+            "path": "2023-baoyan-cover",
+            "password": "nuaa",
+            "cover": "https://pic1.zhimg.com/80/v2-6852d5a87a18b03248d5e79a2d481771_1440w.png?source=d16d100b",
+            "tags": [
+                "cover",
+                "nuaa"
+            ]
+        }
+    ],
+    "index": {
+        "毕设中期答辩——基于扩散模型的图像去噪": 0,
+        "优秀毕业生答辩": 1,
+        "Colossalai 流水线并行框架开发": 2,
+        "毕设开题答辩——基于扩散模型的图像去噪": 3,
+        "我的保研路": 4,
+        "保研分享": 5,
+        "一场经验的分享，更是信念的传递": 6,
+        "记得少年峥嵘夜": 7,
+        "一切都是最好的安排": 8,
+        "2023 nuaa 保研分享会 cover": 9
+    }
+}

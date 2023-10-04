@@ -1,0 +1,132 @@
+{
+	"Slidev First Page Config": {
+		"scope": "md,markdown",
+		"prefix": "config",
+		"body": [
+            "---",
+            "theme: academic",
+            "layout: cover",
+            "class: text-white text-center",
+            "coverAuthor:$1",
+            "coverAuthorUrl: $2",
+            "coverBackgroundUrl: $3",
+            "coverBackgroundSource: $4",
+            "fonts:",
+            "  local: Times, Montserrat, Roboto Mono, Roboto Slab",
+            "themeConfig:",
+            "  paginationX: r",
+            "  paginationY: t",
+            "  paginationPagesDisabled: [1]",
+            "title: $4",
+            "hideInToc: true",
+            "transition: slide-left",
+            "---",
+            "",
+            "---",
+            "layout: table-of-contents",
+            "hideInToc: true",
+            "transition: slide-left",
+            "---",
+            "# 目录",
+            "",
+            "$5",
+            "",
+            "---",
+            "layout: cover",
+            "class: text-white text-center",
+            "coverBackgroundUrl: $6",
+            "hideInToc: true",
+            "transition: slide-left",
+            "---",
+           " # Thanks for watching"
+		],
+		"description": "slidev 第一页的配置"
+	},
+
+    "v-click": {
+        "scope": "md,markdown",
+		"prefix": "v-click",
+        "body": [
+            "<v-click>",
+            "",
+            "$0",
+            "",
+            "</v-click>"
+
+        ],
+        "description": "点击出现动画wrapper"
+    },
+
+    "transition-another-page": {
+        "scope": "md,markdown",
+		"prefix": "transition-another-page",
+        "body": [
+            "---",
+            "transition: slide-left",
+            "---",
+            "$1",
+            "<Footnotes separator>",
+            "    <Footnote>$2</Footnote>",
+            "</Footnotes>"
+        ],
+        "description": "带有平移动画的新页"
+    },
+    "footnotes" : {
+        "scope": "md,markdown",
+        "prefix": "footnotes",
+        "body": [
+            "<Footnotes separator>",
+            "    <Footnote>$0</Footnote>",
+            "</Footnotes>"
+        ],
+        "description": "页脚"
+    },
+    "center-image": {
+        "scope": "md,markdown",
+        "prefix": "center-image",
+        "body": [
+            "<div align=\"center\">",
+            "   <img src=\"$1\" style=\"zoom:$2%;\"/>",
+            "</div>"
+        ],
+        "description": "居中图片"
+    },
+
+    "transition-with-figure-side": {
+        "scope": "md,markdown",
+        "prefix": "transition-with-figure-side",
+        "body": [
+            "---",
+            "layout: figure-side",
+            "figureUrl: $0",
+            "transition: slide-left",
+            "---",
+            "$1",
+            "<Footnotes separator>",
+            "    <Footnote>$2</Footnote>",
+            "</Footnotes>"
+        ],
+        "description": "带有平移动画和右侧图像的新页"
+    },
+    "color-span": {
+        "scope": "md,markdown",
+        "prefix": "color-span",
+        "body": [
+            "<span style=\"color:$1;\">$2</span>"
+        ],
+        "description": "带有颜色的span标签"
+    },
+    "two-col": {
+        "body": [
+            "<div style=\"display:flex;justify-content: space-between;\">",
+            "<div>",
+            "$1",
+            "</div>",
+            "<div>",
+            "$2",
+            "</div>",
+            "</div>"
+        ],
+        "description": "双列布局"
+    }
+}

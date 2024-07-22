@@ -12,8 +12,8 @@ import pandas as pd
 
 
 INDEX_JSON = './index.json'
-EXCLUDE_DIRS = ['components', 'node_modules', '.vscode']
-PPT_SERVER_ROOT = 'root@101.43.239.71:/usr/share/nginx/ppt'
+EXCLUDE_DIRS = ['components', 'node_modules', '.vscode', '.git']
+PPT_SERVER_ROOT = 'ubuntu@101.43.239.71:/home/ubuntu/website/dust-slidev'
 
 
 

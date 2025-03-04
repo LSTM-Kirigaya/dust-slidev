@@ -249,10 +249,11 @@ transition: slide-left
 
 > Outrageously Large Neural Network
 
-
+---
+transition: slide-left
+---
 
 ## Reference
-
 
 - [Scaling of Search and Learning: A Roadmap to Reproduce o1 from Reinforcement Learning Perspective](https://arxiv.org/pdf/2412.14135)
 

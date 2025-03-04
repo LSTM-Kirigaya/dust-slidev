@@ -1,11 +1,26 @@
 {
     "content": [
         {
+            "name": "Deepseek R1 介绍",
+            "path": "deepseek-r1",
+            "password": "",
+            "cover": "https://pic1.zhimg.com/80/v2-3a4609e64e3e2f7d0c93ff363b28560c_1440w.png",
+            "tags": [
+                "deepseek",
+                "深度学习",
+                "大模型"
+            ]
+        },
+        {
             "name": "ShareMiracle 项目简介",
             "path": "share-miracle",
             "password": "",
             "cover": "https://picx.zhimg.com/80/v2-a70204e282cfb6915b8dfb5ab59bb5ba_1440w.png",
-            "tags": []
+            "tags": [
+                "miracle",
+                "数据平台",
+                "工程项目"
+            ]
         },
         {
             "name": "huggingface介绍",
@@ -117,17 +132,18 @@
         }
     ],
     "index": {
-        "ShareMiracle 项目简介": 0,
-        "huggingface介绍": 1,
-        "毕设中期答辩——基于扩散模型的图像去噪": 2,
-        "优秀毕业生答辩": 3,
-        "Colossalai 流水线并行框架开发": 4,
-        "毕设开题答辩——基于扩散模型的图像去噪": 5,
-        "我的保研路": 6,
-        "保研分享": 7,
-        "一场经验的分享，更是信念的传递": 8,
-        "记得少年峥嵘夜": 9,
-        "一切都是最好的安排": 10,
-        "2023 nuaa 保研分享会 cover": 11
+        "Deepseek R1 介绍": 0,
+        "ShareMiracle 项目简介": 1,
+        "huggingface介绍": 2,
+        "毕设中期答辩——基于扩散模型的图像去噪": 3,
+        "优秀毕业生答辩": 4,
+        "Colossalai 流水线并行框架开发": 5,
+        "毕设开题答辩——基于扩散模型的图像去噪": 6,
+        "我的保研路": 7,
+        "保研分享": 8,
+        "一场经验的分享，更是信念的传递": 9,
+        "记得少年峥嵘夜": 10,
+        "一切都是最好的安排": 11,
+        "2023 nuaa 保研分享会 cover": 12
     }
 }

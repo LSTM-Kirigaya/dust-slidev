@@ -1,6 +1,13 @@
 {
     "content": [
         {
+            "name": "ShareMiracle 项目简介",
+            "path": "share-miracle",
+            "password": "",
+            "cover": "https://picx.zhimg.com/80/v2-a70204e282cfb6915b8dfb5ab59bb5ba_1440w.png",
+            "tags": []
+        },
+        {
             "name": "huggingface介绍",
             "path": "huggingface-introduction",
             "password": "",
@@ -110,16 +117,17 @@
         }
     ],
     "index": {
-        "huggingface介绍": 0,
-        "毕设中期答辩——基于扩散模型的图像去噪": 1,
-        "优秀毕业生答辩": 2,
-        "Colossalai 流水线并行框架开发": 3,
-        "毕设开题答辩——基于扩散模型的图像去噪": 4,
-        "我的保研路": 5,
-        "保研分享": 6,
-        "一场经验的分享，更是信念的传递": 7,
-        "记得少年峥嵘夜": 8,
-        "一切都是最好的安排": 9,
-        "2023 nuaa 保研分享会 cover": 10
+        "ShareMiracle 项目简介": 0,
+        "huggingface介绍": 1,
+        "毕设中期答辩——基于扩散模型的图像去噪": 2,
+        "优秀毕业生答辩": 3,
+        "Colossalai 流水线并行框架开发": 4,
+        "毕设开题答辩——基于扩散模型的图像去噪": 5,
+        "我的保研路": 6,
+        "保研分享": 7,
+        "一场经验的分享，更是信念的传递": 8,
+        "记得少年峥嵘夜": 9,
+        "一切都是最好的安排": 10,
+        "2023 nuaa 保研分享会 cover": 11
     }
 }

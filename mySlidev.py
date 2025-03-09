@@ -12,7 +12,7 @@ import pandas as pd
 
 
 INDEX_JSON = './index.json'
-EXCLUDE_DIRS = ['components', 'node_modules', '.vscode', '.git']
+EXCLUDE_DIRS = ['components', 'node_modules', '.vscode', '.git', 'pages']
 PPT_SERVER_ROOT = 'ubuntu@101.43.239.71:/home/ubuntu/website/dust-slidev'
 
 
@@ -162,7 +162,7 @@ def update(args: ArgsType):
         if os.path.isdir(dictory) and dictory not in EXCLUDE_DIRS:
             meta_path = os.path.join(dictory, 'meta.json')
             if not os.path.exists(meta_path):
-                color_report( 'meta文件' + meta_path + '找不到，请检查项目是否损坏！', MT.Error)
+                color_report( 'meta文件 ' + meta_path + ' 找不到，请检查项目是否损坏！', MT.Error)
                 return
             meta = readJson(meta_path)
             

@@ -95,7 +95,7 @@ def build(args: ArgsType):
     if create_temp_files(args):
         name = os.path.basename(args.i)
         target_dist_path = os.path.join(args.i, name)
-        os.system('slidev build -o ' + target_dist_path)
+        os.system('npx slidev build -o ' + target_dist_path)
         
         index_path = os.path.join(target_dist_path, 'index.html')
         if not os.path.exists(index_path):
@@ -121,7 +121,7 @@ def build(args: ArgsType):
 
 def dev(args: ArgsType):
     if create_temp_files(args):
-        os.system('slidev')
+        os.system('npx slidev')
 
 def create(args: ArgsType):
     out_path = os.path.basename(args.o)

@@ -7,9 +7,13 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "51.8.2",
-    "@slidev/theme-default": "0.25.0",
-    "@slidev/theme-seriph": "0.25.0",
-    "slidev-theme-academic": "2.1.0"
+    "@slidev/cli": "^0.40.3",
+    "@slidev/theme-default": "*",
+    "slidev-theme-academic": "^1.1.1",
+    "slidev-theme-unicorn": "^1.1.2"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.89.2",
+    "vite-svg-loader": "^5.1.0"
   }
 }

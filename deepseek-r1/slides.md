@@ -1,17 +1,8 @@
 ---
-theme: academic
+theme: default
 layout: cover
-class: text-center
-coverAuthor: 黄哲龙
-fonts:
-  local: Times, Montserrat, Roboto Mono, Roboto Slab
-themeConfig:
-  paginationX: r
-  paginationY: t
-  paginationPagesDisabled: [1]
-title: 
-hideInToc: true
 transition: slide-left
+background: https://images.unsplash.com/photo-1502189562704-87e622a34c85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80
 ---
 
 # Deepseek R1

@@ -1,6 +1,13 @@
 {
     "content": [
         {
+            "name": "用 AI Agent 来封装你的记忆和知识",
+            "path": "package-your-skill-via-ai-agent",
+            "password": "",
+            "cover": "https://pic1.zhimg.com/v2-3a4e8aa1ddaac632601532bb757a15ad_1440w.jpg?source=d16d100b",
+            "tags": []
+        },
+        {
             "name": "Paper Reading: Tell Agent from APIGen",
             "path": "tell-agent-from-apigen",
             "password": "",
@@ -142,19 +149,20 @@
         }
     ],
     "index": {
-        "Paper Reading: Tell Agent from APIGen": 0,
-        "Deepseek R1 介绍": 1,
-        "ShareMiracle 项目简介": 2,
-        "huggingface介绍": 3,
-        "毕设中期答辩——基于扩散模型的图像去噪": 4,
-        "优秀毕业生答辩": 5,
-        "Colossalai 流水线并行框架开发": 6,
-        "毕设开题答辩——基于扩散模型的图像去噪": 7,
-        "我的保研路": 8,
-        "保研分享": 9,
-        "一场经验的分享，更是信念的传递": 10,
-        "记得少年峥嵘夜": 11,
-        "一切都是最好的安排": 12,
-        "2023 nuaa 保研分享会 cover": 13
+        "用 AI Agent 来封装你的记忆和知识": 0,
+        "Paper Reading: Tell Agent from APIGen": 1,
+        "Deepseek R1 介绍": 2,
+        "ShareMiracle 项目简介": 3,
+        "huggingface介绍": 4,
+        "毕设中期答辩——基于扩散模型的图像去噪": 5,
+        "优秀毕业生答辩": 6,
+        "Colossalai 流水线并行框架开发": 7,
+        "毕设开题答辩——基于扩散模型的图像去噪": 8,
+        "我的保研路": 9,
+        "保研分享": 10,
+        "一场经验的分享，更是信念的传递": 11,
+        "记得少年峥嵘夜": 12,
+        "一切都是最好的安排": 13,
+        "2023 nuaa 保研分享会 cover": 14
     }
 }

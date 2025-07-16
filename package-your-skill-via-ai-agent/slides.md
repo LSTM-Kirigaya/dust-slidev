@@ -7,7 +7,7 @@ coverAuthor: 黄哲龙
 coverAuthorUrl: https://kirigaya.cn
 ---
 
-# Un AI Share
+# AI Agent Share
 
 <h2 class="text-primary">用 AI Agent 来封装你的记忆和知识</h2>
 
@@ -250,14 +250,20 @@ transition: slide-left
 ---
 
 ## AI Agent 三大核心组件
-**技术进展**
+**规划模块 Planning**
 
-### 规划模块 Planning
+planning 很难，恐怕需要使用专业的 planning 数据集训练特化大模型，牺牲一部分大模型什么都知道的能力到什么都会做的能力。核心技术主要也都是数据：
 
-planning 很难，恐怕需要使用专业的 planning 数据集训练特化大模型，牺牲一部分大模型什么都知道的能力到什么都会做的能力。核心技术如下：
+- Dataset: `Planning Dataset`
+- Pipeline: `HIL` (Human in loop)
 
-- Planning Dataset
-- HIL: Human in loop
+<br>
+
+<v-click>
+
+目前训练阶段 LLM 在 Agentic 上仍然有很大的提升空间，这部分空间可以维持大约两年左右的技术红利。
+
+</v-click>
 
 ---
 layout: default
@@ -265,15 +271,54 @@ transition: slide-left
 ---
 
 ## AI Agent 三大核心组件
-**技术进展**
+**规划模块 Planning**
 
-### 动作模块 Action
+值得学习的工作：Kimi K2
+
+> 但是我们换个思路，我的假设是：**模型在预训练中已经知道工具该怎么用了，我们只需要把这个能力激发出来** [1] 。这个假设的的基础很容易理解：预训练见过大量的代码数据，其中有大量的、用各种语言和表达方式的 API call，如果把每个 API call 都当成一种工具，那么模型早就该会用了 [2]。另一个基础是，预训练模型本身就掌握了丰富的世界知识，比如你让他角色扮演一个 Linux Terminal，它完全能和你像模像样的交互一番，那么显然对于 terminal tool 调用应当只需要少量数据就可以激发出来。
+
+<br>
+
+<v-click>
+
+- [1] Reasoning or Memorization? https://arxiv.org/abs/2507.10532
+- [2] APIGen https://neurips.cc/virtual/2024/poster/97756
+
+</v-click>
+
+<br>
+
+<v-click>
+
+> Kimi 发布首个万亿参数开源模型 K2 模型，哪些信息值得关注？ - Justin Wong的回答 - 知乎
+https://www.zhihu.com/question/1927140506573435010/answer/1927776120197056408
+
+</v-click>
+
+---
+layout: figure
+figureUrl: https://pica.zhimg.com/80/v2-64f8f9ef64cae0958ef3cd67644407fd_1440w.png
+figureCaption: kimi k2 性能评测
+  https://www.zhihu.com/question/1927140506573435010/answer/1927482170513011817
+transition: slide-left
+---
+
+## AI Agent 三大核心组件
+**动作模块 Action**
+
+---
+layout: default
+transition: slide-left
+---
+
+## AI Agent 三大核心组件
+**动作模块 Action**
 
 在设计边界（design boundary）设计明确的情况下，基于 MCP 的方案可以多块好省地快速把一堆现成的功能函数封装为 MCP。
 
 <v-click>
   <div class="text-3xl mt-20 font-bold text-primary px-8 py-6 bg-primary/5 rounded-lg border-2 border-primary/30 shadow-lg mx-auto max-w-3xl leading-relaxed">
-    MCP 服务器 + MCP 客户端 = 动作模块 Action
+    动作 = MCP 服务器 + MCP 客户端
   </div>
 </v-click>
 
@@ -286,6 +331,97 @@ transition: slide-left
 
 ## AI Agent 三大核心组件
 **技术进展**
+
+
+---
+layout: default
+transition: slide-left
+---
+
+## 技术进展
+**记忆模块 Memory**
+
+  <div class="text-3xl mt-10 font-bold text-primary px-8 py-6 bg-primary/5 rounded-lg border-2 border-primary/30 shadow-lg mx-auto max-w-3xl leading-relaxed">
+    结构化记忆 + 半结构化记忆 + 记忆
+  </div>
+
+<br>
+
+<v-click>
+
+- 结构化记忆 (profile): 类似用户档案的固定信息，一般通过完全确定的数据结构表达
+
+- 半结构化记忆 (semi-profile): 有一定模式但会变化的行为数据，一般通过子项确定的可变数据结构表达
+- 记忆 (memory): 临时的、碎片化的对话内容，一般通过 embedding 来表达
+
+</v-click>
+
+---
+layout: two-cols
+transition: slide-left
+---
+
+## 技术进展
+**结构化记忆 (profile)**
+
+Grok 虚拟人物 Ani, 根据好感度系统解锁不同功能
+
+<br>
+
+<v-click>
+
+```js
+const profile = {
+    username: '锦恢',
+    role: 'common',
+    userPreference: { /** ... */ },
+    score: 90
+}
+```
+
+</v-click>
+
+::right::
+
+
+
+<img src="https://linux.do/uploads/default/original/4X/8/0/c/80cef695fe62dd547475a99514f402d5ae1b5f23.jpeg" />
+
+---
+layout: two-cols
+transition: slide-left
+---
+
+## 技术进展
+**半结构化记忆 (semi-profile)**
+
+claude code
+
+<img src="https://pic3.zhimg.com/v2-7ba25352a976a5e8974588ee0c43efc0_r.jpg" width="95%" />
+
+::right::
+
+CLAUDE.md
+
+```markdown
+### Multi-Module Structure
+OpenMCP follows a **layered modular architecture** with three main deployment targets:
+
+1. **VSCode Extension** (`src/extension.ts`) - IDE integration
+2. **Service Layer** (`service/`) - Node.js backend handling MCP protocol
+3. **Renderer Layer** (`renderer/`) - Vue.js frontend for UI
+
+### Key Architectural Patterns
+
+#### Message Bridge Communication
+The system uses a **message bridge pattern** for cross-platform communication:
+- **VSCode**: Uses `vscode.postMessage` API
+- **Electron**: Uses IPC communication
+- **Web**: Uses WebSocket connections
+- **Node.js**: Uses EventEmitter for SDK mode
+
+All communication flows through `MessageBridge` class in `renderer/src/api/message-bridge.ts`.
+```
 
 ---
 layout: default
@@ -484,6 +620,8 @@ Q&A
 
 微信：lstmkirigaya
 
+微信公众号：汇尘轩
+
 个人网站：https://kirigaya.cn
 
-OpenMCP: https://kirigaya.cn/openmcp
+OpenMCP: https://openmcp.kirigaya.cn

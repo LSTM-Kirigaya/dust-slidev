@@ -1,6 +1,16 @@
 {
     "content": [
         {
+            "name": "动手实现一个做 PPT 的 MCP 服务器",
+            "path": "agent-x-mcp-share",
+            "password": "",
+            "cover": "https://pic1.zhimg.com/80/v2-709b0c223158984616f659f4604871d9_1440w.png",
+            "tags": [
+                "agent",
+                "llm"
+            ]
+        },
+        {
             "name": "miracle 2025.7.21 组会报告 AI Agent Research",
             "path": "miracle-2025-7-21-report",
             "password": "",
@@ -159,21 +169,22 @@
         }
     ],
     "index": {
-        "miracle 2025.7.21 组会报告 AI Agent Research": 0,
-        "用 AI Agent 来封装你的记忆和知识": 1,
-        "Paper Reading: Tell Agent from APIGen": 2,
-        "Deepseek R1 介绍": 3,
-        "ShareMiracle 项目简介": 4,
-        "huggingface介绍": 5,
-        "毕设中期答辩——基于扩散模型的图像去噪": 6,
-        "优秀毕业生答辩": 7,
-        "Colossalai 流水线并行框架开发": 8,
-        "毕设开题答辩——基于扩散模型的图像去噪": 9,
-        "我的保研路": 10,
-        "保研分享": 11,
-        "一场经验的分享，更是信念的传递": 12,
-        "记得少年峥嵘夜": 13,
-        "一切都是最好的安排": 14,
-        "2023 nuaa 保研分享会 cover": 15
+        "动手实现一个做 PPT 的 MCP 服务器": 0,
+        "miracle 2025.7.21 组会报告 AI Agent Research": 1,
+        "用 AI Agent 来封装你的记忆和知识": 2,
+        "Paper Reading: Tell Agent from APIGen": 3,
+        "Deepseek R1 介绍": 4,
+        "ShareMiracle 项目简介": 5,
+        "huggingface介绍": 6,
+        "毕设中期答辩——基于扩散模型的图像去噪": 7,
+        "优秀毕业生答辩": 8,
+        "Colossalai 流水线并行框架开发": 9,
+        "毕设开题答辩——基于扩散模型的图像去噪": 10,
+        "我的保研路": 11,
+        "保研分享": 12,
+        "一场经验的分享，更是信念的传递": 13,
+        "记得少年峥嵘夜": 14,
+        "一切都是最好的安排": 15,
+        "2023 nuaa 保研分享会 cover": 16
     }
 }

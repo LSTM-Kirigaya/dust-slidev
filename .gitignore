@@ -10,3 +10,7 @@ components.d.ts
 *.css
 _redirects
 **/assets/*.png
+*.ttf
+*.woff
+*.woff2
+**/theme/*

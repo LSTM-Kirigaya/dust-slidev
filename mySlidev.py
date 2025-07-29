@@ -95,29 +95,12 @@ def build(args: ArgsType):
     if create_temp_files(args):
         name = os.path.basename(args.i)
         target_dist_path = os.path.join(args.i, name)
-        os.system('npx slidev build -o ' + target_dist_path)
+        os.system(f'slidev build -o {target_dist_path} --base /ppt/{name}')
         
         index_path = os.path.join(target_dist_path, 'index.html')
         if not os.path.exists(index_path):
             color_report('index.html生成失败！', MT.Error)
             return
-
-        # 加上 /ppt/name 的前缀
-        prefix_url = '/ppt/' + name
-        
-        parser = MyHTMLParser()
-        with open(index_path, 'r', encoding='utf-8') as fp: 
-            html = fp.read()
-            parser.feed(html)
-
-        for href_value in _global_args['index_hrefs']:
-            href_value: str
-            if href_value.startswith('/assets'):
-                adjust_href = prefix_url + href_value
-                html = html.replace(href_value, adjust_href)
-        
-        with open(index_path, 'w', encoding='utf-8') as fp:
-            fp.write(html)        
 
 def dev(args: ArgsType):
     if create_temp_files(args):

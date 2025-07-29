@@ -144,7 +144,7 @@ transition: slide-left
 - **上下文学习**: 基于工具描述和示例快速适应
 
 ---
-layout: two-cols
+layout: default
 transition: slide-left
 ---
 

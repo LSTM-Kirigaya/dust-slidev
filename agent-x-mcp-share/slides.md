@@ -4,9 +4,10 @@ layout: cover
 transition: slide-left
 coverAuthor: 锦恢
 coverAuthorUrl: https://kirigaya.cn/about
+coverBackgroundUrl: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/w68kZc0L69w.webp
 ---
 
-# Agent ✖️ MCP
+# Agent × MCP
 ## 动手实现一个做 PPT 的 MCP 服务器
 
 ---
@@ -27,7 +28,7 @@ transition: slide-left
 **那么问题**：能否让AI帮我们快速生成这种简约的研究型PPT？
 
 ---
-layout: default
+layout: two-cols
 transition: slide-left
 ---
 
@@ -36,11 +37,53 @@ transition: slide-left
 专为开发者设计的现代化幻灯片工具：
 
 - ✅ **基于Markdown** - 熟悉的语法
+
 - ✅ **Vue.js驱动** - 高度可定制
 - ✅ **实时预览** - 保存即更新
 - ✅ **开发者友好** - 支持代码高亮
 
-<img src="https://pic1.zhimg.com/80/v2-f3093fd7e176a58bc8b8bf33dc7f8aa7_1440w.png" width="68%"/>
+
+::right::
+
+<br>
+
+![](https://pica.zhimg.com/80/v2-c63562017efde1cd0c499a17754ba343_1440w.png)
+
+https://sli.dev/demo/starter
+
+---
+layout: default
+transition: slide-left
+---
+
+## slidev 安装
+
+安装 & 运行
+
+```bash
+npm i @slidev/cli
+slidev slides.md --open
+```
+
+<v-click>
+
+文件名：`slides.md`
+
+```markdown
+---
+theme: academic
+layout: cover
+transition: slide-left
+coverAuthor: 锦恢
+coverAuthorUrl: https://kirigaya.cn/about
+coverBackgroundUrl: https://cdn.jsdelivr.net/gh/slidevjs/slidev-covers@main/static/w68kZc0L69w.webp
+---
+
+# Agent ✖️ MCP
+## 动手实现一个做 PPT 的 MCP 服务器
+```
+
+</v-click>
 
 ---
 layout: default
@@ -48,6 +91,8 @@ transition: slide-left
 ---
 
 ## Slidev的三大痛点
+
+<br>
 
 ### 1. 上手门槛高
 需要记忆大量front-matter语法和转场配置
@@ -58,7 +103,11 @@ transition: slide-left
 ### 3. 心智负担重
 LaTeX公式、图表、主题配置分散在多个文件中
 
+<v-click>
+
 **结果**：时间都花在格式调整上，而不是思考内容
+
+</v-click>
 
 ---
 layout: default
@@ -67,9 +116,32 @@ transition: slide-left
 
 ## MCP解决方案：让AI写Slidev
 
-::: figure-side
+<br>
 
-**左图：AI Agent工作流程**
+基本思路
+
+1. 根据 idea 设置出第一个版本的 mcp server
+
+2. 测试工具完备性
+3. 测试语义完备性
+4. 迭代 mcp server（调整 mcp tool 设计和 mcp prompt），然后继续测试
+
+
+<v-click>
+
+> 留给你们一个小问题：为什么不直接让大模型生成整个 slidev，毕竟这玩意儿是纯文本。
+
+</v-click>
+
+---
+layout: default
+transition: slide-left
+---
+
+## MCP解决方案：让AI写Slidev
+
+
+**AI Agent 工作流程**
 
 ```mermaid
 flowchart LR
@@ -83,37 +155,37 @@ flowchart LR
     G --> H[完成!]
 ```
 
-**右文：一句话总结**
+**基本架构**
 
-把"写PPT"变成"说需求"——
-只需告诉AI你的研究内容，它自动帮你：
-- ✨ 生成合适的页面结构
-- 🎨 选择最佳的主题样式
-- 📊 插入代码块和图表
-- 🚀 启动在线预览
+- slidev 设计为一个结构化的对象 `SlidevItem`
+
+- slidev-mcp 管理 `SlidevItem` 数组
+- 将对于 `SlidevItem` 数组 的增删改查逻辑，暴露为 mcp tool
+- 语义引导暴露为一个 system prompt，基于测试不断迭代
+
+[vscode 启动！](vscode://file/C:/Users/kirigaya/codes)
 
 ---
 layout: default
 transition: slide-left
 ---
 
-## 实际效果展示
+## 实际效果
 
 AI Agent生成的组会PPT示例：
 
-- 📱 在线实时预览
-- 🎯 内容精准匹配研究方向
+- 📱 输入大纲和素材，通过纯自然语言交互快速拟定初稿
 - ⚡ 从大纲到成品只需30秒
 
 
-<img src="https://picx.zhimg.com/80/v2-3449c0a41c9168dfe9cb2dd4993ae189_1440w.png" width="80%"/>
+<img src="https://pic2.zhimg.com/100/v2-85a2bfccbe4cb826535344e687238095_r.jpg" width="80%"/>
 
 ---
 layout: two-cols
 transition: slide-left
 ---
 
-## 结论：实验室效率革命
+## 继续？光速迭代为产品！
 
 基于slidev-mcp，我们开发了：**slidev-ai**
 
@@ -122,9 +194,11 @@ transition: slide-left
 - ⚡ **极速生成** - 30秒完成30页组会PPT
 - 🎓 **学术适配** - 专为研究人员优化
 
+[openmcp-sdk : 适用于 openmcp 的部署框架](https://kirigaya.cn/openmcp/zh/sdk-tutorial/)
+
 ::right::
 
-![slidev-ai界面](https://picx.zhimg.com/80/v2-ce8628327efa36e123d440ee8b2cfbb0_1440w.png)
+![slidev-ai界面](https://pic1.zhimg.com/80/v2-05fec419515eb61a1dc9e101c8e4cdc4_1440w.png)
 
 **AI时代，让PPT制作回归内容本身！**
 
@@ -145,20 +219,26 @@ transition: slide-left
 - [ ] more imagination ...
 
 ---
-layout: default
+layout: two-cols
 transition: slide-left
 ---
 
 ## Thanks
 
-### Q&A
 
-我的个人网站： https://kirigaya.cn/about
+**Time for Q&A**
+
+个人主页： https://kirigaya.cn/about
+
+Github: https://github.com/LSTM-Kirigaya
 
 OpenMCP 官网： https://openmcp.kirigaya.cn
 
 邮箱： 1193466151@qq.com
 
-微信：
+::right::
+
+<br>
+<br>
 
 <img src="https://picx.zhimg.com/80/v2-86ce18c2a627b3dfe85d8c691a34707e_1440w.png" width="200">

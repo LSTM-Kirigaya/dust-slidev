@@ -241,6 +241,6 @@ OpenMCP 官网： https://openmcp.kirigaya.cn
 <br>
 <br>
 
-<img src="https://picx.zhimg.com/80/v2-86ce18c2a627b3dfe85d8c691a34707e_1440w.png" width="200">
+<img src="https://pic1.zhimg.com/80/v2-5d77aa5733045ab14c8e856569b9656a_1440w.png" width="200">
 
 <img src="https://pica.zhimg.com/80/v2-cce741b40bc08d22c67c60b5565f39fe_1440w.png" width="200">
